@@ -7,3 +7,8 @@ An end-to-end Machine Learning pipeline using **XGBoost** to forecast season-lon
 - **Feature Engineering**: Calculates 1-, 2-, and 3-year lagged performance features across scoring efficiency, usage, and volume.
 - **Model**: Gradient boosted decision trees (`XGBRegressor`) evaluated via cross-season backtesting.
 - **Output**: Generates a customized 16-team Draft Board formatted in Excel with position-based replacement baselines.
+
+## 📊 Data Source
+The underlying game log dataset is sourced from Kaggle:
+- **Dataset:** [NBA Stats Dataset](https://www.kaggle.com/datasets/chevronronson/nba-stats-dataset?resource=download-directory) by Chevron Ronson.
+- **Coverage:** Historical player-level game logs processed into seasonal aggregations (`master_player_level.parquet`).
